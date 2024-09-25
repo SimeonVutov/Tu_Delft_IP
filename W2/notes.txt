@@ -1,0 +1,13 @@
+Pass by value:
+    
+Pass by reference
+
+Classes:
+    IMPORTANT!
+    we have a student class with two attributes:
+        private String name
+        private int studentNumber
+
+    if we are inside a method in student class and have access two another student object (it is passed as a parameter)
+        we can use even the private variables even though they are private. The reason is that we are inside the Student
+        class and inside it we can access private variables

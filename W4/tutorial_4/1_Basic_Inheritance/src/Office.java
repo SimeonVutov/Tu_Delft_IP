@@ -1,0 +1,7 @@
+/**
+ * Office
+ */
+public class Office {
+
+
+}

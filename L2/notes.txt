@@ -1,0 +1,27 @@
+Overflowing:
+    example:
+        0 1 1 1
+        0 1 0 0
+        -------
+        1 0 1 1
+
+        Here by adding these numbers the first bit will flip. However the first bit is the sign, so the result is actually a negative number.
+        How to calculate the new negative number: 
+        The smallest negative number that can be stored in 4 bits is -8 -> 1 0 0 0. If we try to add 1 to it, it will become 1 0 0 1, but this
+        will actually be -7. We only look at all bits except the sign bit. In this case 001 is equal to 1 and to get the number 1 0 0 1 we need
+        add this number to the smallest possible number -8 + 1 = -7.
+        In the example 1 0 1 1 is equal to -5 -> 0 1 1 = 3, so -8 + 3 = -5
+Conditions:
+    Eager:
+    & - AND
+    | - OR
+    ^ - XOR
+    Lazy:
+    && - AND
+    || - OR
+
+    Difference: If we use the lazy operators it will check first the left hand side:
+    a || b, It will check if a is true and if it is it won't even look at the right hand side, but if it is false then it will look at b.
+    However for the eager operators it will need to check both variables.
+Bitwise:
+    

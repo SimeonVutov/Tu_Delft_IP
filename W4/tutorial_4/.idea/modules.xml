@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/1_Basic_Inheritance/1_Basic_Inheritance.iml" filepath="$PROJECT_DIR$/1_Basic_Inheritance/1_Basic_Inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2_Distribution_of_Logic/2_Distribution_of_Logic.iml" filepath="$PROJECT_DIR$/2_Distribution_of_Logic/2_Distribution_of_Logic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3_Interface_and_Testing/3_Interface_and_Testing.iml" filepath="$PROJECT_DIR$/3_Interface_and_Testing/3_Interface_and_Testing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4_Equals_and_Hashcode/4_Equals_and_Hashcode.iml" filepath="$PROJECT_DIR$/4_Equals_and_Hashcode/4_Equals_and_Hashcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tutorial_4.iml" filepath="$PROJECT_DIR$/tutorial_4.iml" />
+    </modules>
+  </component>
+</project>

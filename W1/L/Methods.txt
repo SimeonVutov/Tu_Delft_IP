@@ -1,0 +1,5 @@
+For EXAM!!!
+    public static int max(int x, int y)
+    Signiture of a method is the name of the method + parameters -> max(int x, int y)
+    Name of parameters irrelevant
+
