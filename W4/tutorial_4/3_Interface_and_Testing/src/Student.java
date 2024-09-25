@@ -1,4 +1,4 @@
-public class Student {
+public class Student extends Person implements HasToStudy{
 
     private String name;
     private double height;
@@ -12,6 +12,7 @@ public class Student {
      * @param livesInDelft Whether the student lives in Delft
      */
     public Student(String name, double height, boolean livesInDelft) {
+        super(name, height); 
         this.name = name;
         this.height = height;
         this.livesInDelft = livesInDelft;
