@@ -1,9 +1,6 @@
-public class Student extends Person implements HasToStudy{
-
-    private String name;
-    private double height;
+public class Student extends Person implements HasToStudy {
     private boolean livesInDelft;
-
+    private int timesStudyed;
     /**
      * Creates a student.
      *
@@ -12,37 +9,9 @@ public class Student extends Person implements HasToStudy{
      * @param livesInDelft Whether the student lives in Delft
      */
     public Student(String name, double height, boolean livesInDelft) {
-        super(name, height); 
-        this.name = name;
-        this.height = height;
+        super(name, height);
         this.livesInDelft = livesInDelft;
-    }
-
-    /**
-     * Gets the name of the student.
-     *
-     * @return This student's name
-     */
-    public String getName() {
-        return name;
-    }
-
-    /**
-     * Gets the height of the student.
-     *
-     * @return This student's height
-     */
-    public double getHeight() {
-        return height;
-    }
-
-    /**
-     * Sets the height of the student.
-     *
-     * @param height The new height for this student
-     */
-    public void setHeight(double height) {
-        this.height = height;
+        this.timesStudyed = 0;
     }
 
     /**
@@ -76,5 +45,23 @@ public class Student extends Person implements HasToStudy{
             return true;
 
         return false;
+    }
+
+    @Override
+    public String toString() {
+        if(livesInDelft) {
+            return super.toString() + " and lives in Delft";
+        }
+        return super.toString();
+    }
+
+    @Override
+    public void study() {
+        timesStudyed++;
+    }
+
+    @Override
+    public boolean willPassExam() {
+        return timesStudyed >= 5;
     }
 }
