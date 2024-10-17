@@ -60,4 +60,11 @@ public class Person {
     public String toString() {
         return name + "is " + height + " meters tall";
     }
+
+    public int hashCode() {
+        int hash = super.hashCode();
+        hash = hash * 31 + name.hashCode();
+        hash = hash * 31 + height;
+        return hash;
+    }
 }

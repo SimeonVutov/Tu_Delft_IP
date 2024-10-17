@@ -1,6 +1,6 @@
-public class Student extends Person {
+public class Student extends Person implements HasToStudy {
     private boolean livesInDelft;
-
+    private int timesStudyed;
     /**
      * Creates a student.
      *
@@ -11,6 +11,7 @@ public class Student extends Person {
     public Student(String name, double height, boolean livesInDelft) {
         super(name, height);
         this.livesInDelft = livesInDelft;
+        this.timesStudyed = 0;
     }
 
     /**
@@ -30,7 +31,11 @@ public class Student extends Person {
     public void setLivesInDelft(boolean livesInDelft) {
         this.livesInDelft = livesInDelft;
     }
-    
+
+    public int getTimesStudyed() {
+        return timesStudyed;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if(obj == this)
@@ -52,5 +57,23 @@ public class Student extends Person {
             return super.toString() + " and lives in Delft";
         }
         return super.toString();
+    }
+
+    @Override
+    public void study() {
+        timesStudyed++;
+    }
+
+    @Override
+    public boolean willPassExam() {
+        return timesStudyed >= 5;
+    }
+
+    public int hashCode() {
+        int hash = super.hashCode();
+        hash = hash + 31 * timesStudyed;
+        hash = hash * 31 + (livesInDelft ? 1 : 0);
+
+        return hash;
     }
 }

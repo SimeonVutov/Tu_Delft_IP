@@ -52,4 +52,11 @@ public class Teacher extends Person {
         return super.toString() + ". Also he/she is a teacher who teaches " +
                 amountOfCourses;
     }
+
+    public int hashCode() {
+        int result = super.hashCode();
+        result = result * 31 + amountOfCourses;
+
+        return result;
+    }
 }
