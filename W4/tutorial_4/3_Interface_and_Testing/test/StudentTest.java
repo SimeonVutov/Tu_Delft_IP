@@ -22,4 +22,24 @@ public class StudentTest {
         Student s = new Student("Andy", 180, false);
         assertEquals(false, s.willPassExam());
     }
+
+    @Test
+    public void testStudyIncrease() {
+        Student s = new Student("Andy", 180, true);
+        s.study();
+        assertEquals(1, s.getTimesStudyed());
+    }
+
+    @Test
+    public void testGetLivesInDelft() {
+        Student s = new Student("Andy", 180, true);
+        assertEquals(true, s.getLivesInDelft());
+    }
+
+    @Test
+    public void testSetLivesInDelft() {
+        Student s = new Student("Andy", 180, false);
+        s.setLivesInDelft(true);
+        assertEquals(true, s.getLivesInDelft());
+    }
 }

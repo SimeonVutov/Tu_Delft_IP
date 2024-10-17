@@ -31,7 +31,11 @@ public class Student extends Person implements HasToStudy {
     public void setLivesInDelft(boolean livesInDelft) {
         this.livesInDelft = livesInDelft;
     }
-    
+
+    public int getTimesStudyed() {
+        return timesStudyed;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if(obj == this)
