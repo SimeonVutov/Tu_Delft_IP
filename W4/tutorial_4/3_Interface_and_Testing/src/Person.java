@@ -41,4 +41,23 @@ public class Person {
         this.height = height;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if(obj == this)
+            return true;
+        if(obj == null || this.getClass() == obj.getClass())
+            return false;
+
+        Student that = (Student) obj;
+
+        if(this.name.equals(that.getName()) && this.height == that.getHeight())
+            return true;
+
+        return false;
+    }
+
+    @Override
+    public String toString() {
+        return name + "is " + height + " meters tall";
+    }
 }

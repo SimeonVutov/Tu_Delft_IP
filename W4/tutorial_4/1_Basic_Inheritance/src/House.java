@@ -1,4 +1,4 @@
-public class House extends Building {
+public class House {
     private int number;
 
     public House(String street, int value, int number) {

@@ -68,4 +68,12 @@ public class Student extends Person implements HasToStudy {
     public boolean willPassExam() {
         return timesStudyed >= 5;
     }
+
+    public int hashCode() {
+        int hash = super.hashCode();
+        hash = hash + 31 * timesStudyed;
+        hash = hash * 31 + (livesInDelft ? 1 : 0);
+
+        return hash;
+    }
 }
