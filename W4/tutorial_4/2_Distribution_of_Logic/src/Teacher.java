@@ -1,7 +1,5 @@
-public class Teacher {
+public class Teacher extends Person {
 
-    private String name;
-    private double height;
     private int amountOfCourses;
 
     /**
@@ -12,36 +10,8 @@ public class Teacher {
      * @param amountOfCourses The amount of courses the teacher teaches
      */
     public Teacher(String name, double height, int amountOfCourses) {
-        this.name = name;
-        this.height = height;
+        super(name, height);
         this.amountOfCourses = amountOfCourses;
-    }
-
-    /**
-     * Gets the name of the teacher.
-     *
-     * @return This teacher's name
-     */
-    public String getName() {
-        return name;
-    }
-
-    /**
-     * Gets the height of the teacher.
-     *
-     * @return This teacher's height
-     */
-    public double getHeight() {
-        return height;
-    }
-
-    /**
-     * Sets the height of the teacher.
-     *
-     * @param height The new height for this teacher
-     */
-    public void setHeight(double height) {
-        this.height = height;
     }
 
     /**
@@ -62,4 +32,24 @@ public class Teacher {
         this.amountOfCourses = amountOfCourses;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if(obj == this)
+            return true;
+        if(obj == null || this.getClass() == obj.getClass())
+            return false;
+
+        Teacher that = (Teacher) obj;
+
+        if(super.equals(that) && this.amountOfCourses == that.amountOfCourses)
+            return true;
+
+        return false;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + ". Also he/she is a teacher who teaches " +
+                amountOfCourses;
+    }
 }

@@ -1,7 +1,4 @@
-public class Student {
-
-    private String name;
-    private double height;
+public class Student extends Person {
     private boolean livesInDelft;
 
     /**
@@ -12,36 +9,8 @@ public class Student {
      * @param livesInDelft Whether the student lives in Delft
      */
     public Student(String name, double height, boolean livesInDelft) {
-        this.name = name;
-        this.height = height;
+        super(name, height);
         this.livesInDelft = livesInDelft;
-    }
-
-    /**
-     * Gets the name of the student.
-     *
-     * @return This student's name
-     */
-    public String getName() {
-        return name;
-    }
-
-    /**
-     * Gets the height of the student.
-     *
-     * @return This student's height
-     */
-    public double getHeight() {
-        return height;
-    }
-
-    /**
-     * Sets the height of the student.
-     *
-     * @param height The new height for this student
-     */
-    public void setHeight(double height) {
-        this.height = height;
     }
 
     /**
@@ -75,5 +44,13 @@ public class Student {
             return true;
 
         return false;
+    }
+
+    @Override
+    public String toString() {
+        if(livesInDelft) {
+            return super.toString() + " and lives in Delft";
+        }
+        return super.toString();
     }
 }
