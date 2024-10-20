@@ -46,8 +46,6 @@ public class PlanningApplication {
                     System.out.println("Invalid choice. Try again.");
             }
         }
-
-
     }
 
     /**

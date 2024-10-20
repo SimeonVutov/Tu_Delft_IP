@@ -1,30 +1,30 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
 class AddressTest {
 
     @Test
     void getStreetTest() {
         Address address = new Address("Roland", 100, "2634B", "Delft");
-        assertEquals("Roland", address.getStreet());
+        Assertions.assertEquals("Roland", address.getStreet());
     }
 
     @Test
     void getNumberTest() {
         Address address = new Address("Roland", 100, "2634B", "Delft");
-        assertEquals(100, address.getNumber());
+        Assertions.assertEquals(100, address.getNumber());
     }
 
     @Test
     void getZipcodeTest() {
         Address address = new Address("Roland", 100, "2634B", "Delft");
-        assertEquals("2634B", address.getZipcode());
+        Assertions.assertEquals("2634B", address.getZipcode());
     }
 
     @Test
     void getCityTest() {
         Address address = new Address("Roland", 100, "2634B", "Delft");
-        assertEquals("Delft", address.getCity());
+        Assertions.assertEquals("Delft", address.getCity());
     }
 
     @Test
@@ -33,19 +33,19 @@ class AddressTest {
         Address address = Address.fromData(stringToParse);
         Address address2 = new Address("Roland", 123, "4325B", "Delft");
 
-        assertEquals(address, address2);
+        Assertions.assertEquals(address, address2);
     }
 
     @Test
     void testToString() {
         Address address = new Address("Roland", 100, "2634B", "Delft");
-        assertEquals("Roland, 100, 2634B, Delft", address.toString());
+        Assertions.assertEquals("Roland, 100, 2634B, Delft", address.toString());
     }
 
     @Test
     void testEquals() {
         Address address = new Address("Roland", 100, "2634B", "Delft");
         Address address2 = new Address("Roland", 100, "2634B", "Delft");
-        assertEquals(address, address2);
+        Assertions.assertEquals(address, address2);
     }
 }

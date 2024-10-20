@@ -1,9 +1,8 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class JobTest {
 
@@ -18,9 +17,9 @@ class JobTest {
         list.add(new ConcreteMixer("None"));
         String plannedDate = "23-10-2024";
         Job job1 = Job.fromData(addressString, description, requiredEquipments, plannedDate);
-        Job job2 = new Job(0, address, description, list, new Date(23, 10, 2024));
+        Job job2 = new Job(2, address, description, list, new Date(23, 10, 2024));
 
-        assertEquals(job2, job1);
+        Assertions.assertEquals(job2, job1);
     }
 
     @Test
@@ -36,11 +35,11 @@ class JobTest {
         );
         // Here Job Total must be adjusted because it is a static field which is updated
         // every Job creation and we do not know in what order the tests are going to run
-        assertEquals(
+        Assertions.assertEquals(
                 "Job 1:\n" +
                         "Location: Roland, 100, 2354D, Delft\n" +
                         "Description: You need to destroy some concrete\n" +
-                        "This JackHammer requires: Strength\nPowerSupply: Air Compressor\n" +
+                        "This JackHammer requires: Strength\nPowerSupply: Air Compressor\n\n" +
                         "Planned Date: 1/1/2000\n" +
                         "Job Total: 2",
                 job.toString()
@@ -66,6 +65,6 @@ class JobTest {
                 equipmentList,
                 new Date(1, 1, 2000)
         );
-        assertEquals(job, job2);
+        Assertions.assertEquals(job, job2);
     }
 }

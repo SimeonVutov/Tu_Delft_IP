@@ -16,7 +16,7 @@ public class ConcreteMixer extends Equipment {
      */
     @Override
     public String toString() {
-        return "This concrete mixer requires: " + requirements + "\n";
+        return "This concrete mixer requires: " + requirements;
     }
 
     /**

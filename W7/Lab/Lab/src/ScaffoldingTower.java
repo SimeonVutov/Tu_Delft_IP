@@ -16,7 +16,7 @@ public class ScaffoldingTower extends Equipment {
      */
     @Override
     public String toString() {
-        return "This scaffolding tower requires: " + requirements + "\n";
+        return "This scaffolding tower requires: " + requirements;
     }
 
     /**

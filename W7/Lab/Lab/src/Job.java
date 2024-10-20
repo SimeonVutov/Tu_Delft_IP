@@ -117,7 +117,7 @@ public class Job {
     public String toString() {
         String list = "";
         for (int i = 0; i < requiredEquipment.size(); i++) {
-            list += requiredEquipment.get(i).toString();
+            list += requiredEquipment.get(i).toString() + "\n";
         }
         String result = String.format(
                 "Job %d:\nLocation: %s\nDescription: %s\n%s\nPlanned Date: %s\nJob Total: %d",
