@@ -1,0 +1,12 @@
+Mekelweg; 4; 2628CD; Delft
+Construct a new bathroom on the 8th floor.
+JackHammer, A hardened chisel for reinforced floors; ConcreteMixer, None;
+24-10-2021
+Cornelis Drebbelweg; 5; 2628CM; Delft
+Repair the eastern stairway to the 1st floor.
+Scaffolding, At least 5 metres tall;
+23-10-2021
+van Mourik Broekmanweg; 6; 2628XE; Delft
+Repair a broken doorknob at office 3W.560.
+
+23-10-2021
