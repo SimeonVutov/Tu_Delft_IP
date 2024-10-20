@@ -31,6 +31,14 @@ class DateTest {
     }
 
     @Test
+    void testSerialize() {
+        String data = "24-10-2024";
+        Date date = new Date(24, 10, 2024);
+
+        Assertions.assertEquals(data, date.serialize());
+    }
+
+    @Test
     void testToString() {
         Date date = new Date(1, 2, 2000);
         Date date2 = new Date(1, 2, 2000);

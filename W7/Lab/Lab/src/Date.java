@@ -61,6 +61,14 @@ public class Date {
         return new Date(days, month, year);
     }
 
+    /**
+     * Creates a string representation of the Date to write to file
+     * @return string representation of the Date object
+     */
+    public String serialize() {
+        return day + "-" + month + "-" + year;
+    }
+
     /** This method returns a human-friendly String representation of this */
     @Override
     public String toString() {

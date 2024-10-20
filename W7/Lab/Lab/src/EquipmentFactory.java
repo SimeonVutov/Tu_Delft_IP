@@ -8,9 +8,11 @@ public class EquipmentFactory {
      * @return  Equipment object
      */
     public static Equipment createEquipment(String data) {
-        String[] parts = data.split(", ");
-        String type = parts[0];
-        String description = parts[1];
+        String[] parts = data.split(",");
+        String type = parts[0].strip();
+        String description = "None";
+        if(parts.length > 1)
+            description = parts[1].strip();
 
         switch (type) {
             case "JackHammer":

@@ -37,6 +37,13 @@ class AddressTest {
     }
 
     @Test
+    void testSerialize() {
+        String data = "Roland; 123; 4325B; Delft";
+        Address address = new Address("Roland", 123, "4325B", "Delft");
+        Assertions.assertEquals(data, address.serialize());
+    }
+
+    @Test
     void testToString() {
         Address address = new Address("Roland", 100, "2634B", "Delft");
         Assertions.assertEquals("Roland, 100, 2634B, Delft", address.toString());

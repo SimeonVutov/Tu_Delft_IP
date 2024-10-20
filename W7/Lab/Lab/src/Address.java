@@ -74,6 +74,14 @@ public class Address {
     }
 
     /**
+     * Creates a string representation of Address for writing to file
+     * @return a string representation of Address
+     */
+    public String serialize() {
+        return String.format("%s; %d; %s; %s", street, number, zipcode, city);
+    }
+
+    /**
      * Creates a string containing all the information for Address
      * @return      String representation of the Address
      */

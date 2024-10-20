@@ -15,4 +15,12 @@ class ScaffoldingTowerTest {
         ScaffoldingTower scaffoldingTower1 = new ScaffoldingTower("To be afraid of heights");
         Assertions.assertEquals(scaffoldingTower, scaffoldingTower1);
     }
+
+    @Test
+    void testSerialize() {
+        String data = "Scaffolding, To not be afraid of heights;";
+        ScaffoldingTower scaffoldingTower = new ScaffoldingTower("To not be afraid of heights");
+
+        Assertions.assertEquals(data, scaffoldingTower.serialize());
+    }
 }

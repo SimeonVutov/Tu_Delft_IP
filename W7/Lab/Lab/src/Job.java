@@ -110,6 +110,25 @@ public class Job {
     }
 
     /**
+     * Creates a string representation of Job to write to file
+     * @return a string representation of Job
+     */
+    public String serialize() {
+        String address = location.serialize();
+        String equipments = "";
+
+        for (int i = 0; i < requiredEquipment.size() - 1; i++) {
+            equipments += requiredEquipment.get(i).serialize() + " ";
+        }
+        if(!requiredEquipment.isEmpty()) {
+            equipments += requiredEquipment.getLast().serialize();
+        }
+        String date = plannedDate.serialize();
+
+        return String.format("%s\n%s\n%s\n%s\n", address, description, equipments, date);
+    }
+
+    /**
      * Creates a human-readable string of the Job object
      * @return  A string of the Job
      */

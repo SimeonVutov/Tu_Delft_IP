@@ -11,6 +11,15 @@ public class ScaffoldingTower extends Equipment {
     }
 
     /**
+     * Creates a string representation of the ScaffoldingTower
+     * @return String representation of the ScaffoldingTower
+     */
+    @Override
+    public String serialize() {
+        return "Scaffolding, " + requirements + ";";
+    }
+
+    /**
      * Returns a readable text representation of the object
      * @return  String
      */

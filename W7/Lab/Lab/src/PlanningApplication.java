@@ -1,5 +1,7 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -10,7 +12,7 @@ public class PlanningApplication {
      * Main method from where the program starts executing
      * @param args
      */
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws IOException {
         // Read from file
         Scanner fileScanner = new Scanner(new File("resources/joblist.txt"));
         JobCatalog jc = JobCatalog.fromData(fileScanner);
@@ -41,6 +43,12 @@ public class PlanningApplication {
                 case 6:
                     break;
                 case 7:
+                    FileWriter fw = new FileWriter("resources/joblist.txt");
+                    for(Job currJob : jc.getJobs()) {
+                        fw.write(currJob.serialize());
+                    }
+
+                    fw.close();
                     break;
                 default:
                     System.out.println("Invalid choice. Try again.");

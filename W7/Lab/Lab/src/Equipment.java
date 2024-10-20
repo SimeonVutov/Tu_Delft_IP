@@ -9,4 +9,12 @@ public abstract class Equipment {
     public Equipment(String requirements) {
         this.requirements = requirements;
     }
+
+    /**
+     * Returns a string representation of the requirement in special format for writing in file
+     * @return string representation of the requirement in special format
+     */
+    public String serialize() {
+        return getClass().getSimpleName().toString() + ", " + requirements + ";";
+    }
 }
