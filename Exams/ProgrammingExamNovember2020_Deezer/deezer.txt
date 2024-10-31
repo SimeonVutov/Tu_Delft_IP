@@ -1,0 +1,31 @@
+ALBUMS
+ALBUM U2; Songs of Innocence; 2014
+ARTISTS Larry Mullen Jr.; The Edge; Bono; Adam Clayton
+TRACK 1; The Miracle; 4:15
+TRACK 2; Every Breaking Wave; 4:12
+TRACK 3; California; 4:00
+TRACK 4; Song for Someone; 3:47
+ALBUM Coldplay; Parachutes; 2000
+ARTISTS Will Champion; Guy Berryman; Chris Martin; Jonny Buckland
+TRACK 1; Don’t Panic; 2:17
+TRACK 2; Shiver; 5:00
+TRACK 3; Spies; 5:19
+TRACK 4; Sparks; 3:47
+TRACK 5; Yellow; 4:27
+ALBUM Billie Eilish; When We All Fall Asleep Where Do We Go?; 2018
+ARTISTS Billie Eilish; Finneas O'Connell
+TRACK 1; Bad Guy; 3:14
+TRACK 2; When the Party's Over; 3:16
+ADS
+AD ING Bank; 0:20; 0.05 euros
+AD Bol.com; 0:15; 0.10 euros
+AD Albert Heijn; 0:30; 0.20 euros
+AD Specsavers; 0:15; 0.05 euros
+AD Kruidvat; 0:10; 0.07 euros
+AD MediaMarkt.nl; 0:20; 0.08 euros
+AD KPN; 0:30; 0.18 euros
+AD TU Delft; 0:15; 0.04 euros
+AD ABN Amro; 0:30; 0.21 euros
+AD Rabobank; 0:15; 0.11 euros
+AD Nike; 0:10; 0.12 euros
+AD Samsung; 0:25; 0.19 euros
