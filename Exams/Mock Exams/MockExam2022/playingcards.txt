@@ -1,0 +1,40 @@
+Unit Card
+NORMAL
+Knight of the Legion - 4 Energy
+4 Attack - 5 Defence
+Spell Card
+RARE
+Frost Ray - 3 Energy - Frost
+Freeze all enemy units, rendering them unable to attack for 1 turn.
+Weapon Card
+RARE
+Warhammer - 3 Energy
+2 Durability
+Unit Card
+RARE
+Longbow Archer - 3 Energy
+4 Attack - 2 Defence
+Spell Card
+LEGENDARY
+Heroes never die! - 6 Energy - Holy
+Revive the most expensive allied unit that died this game.
+Unit Card
+NORMAL
+Mage Apprentice - 2 Energy
+3 Attack - 1 Defence
+Weapon Card
+NORMAL
+Rusty Sword - 2 Energy
+1 Durability
+Unit Card
+NORMAL
+Enraged Squirrel - 1 Energy
+2 Attack - 1 Defence
+Weapon Card
+EPIC
+The Vindicator - 6 Energy
+4 Durability
+Spell Card
+RARE
+Fire Blast - 3 Energy - Fire
+Deal 5 damage to an enemy.
