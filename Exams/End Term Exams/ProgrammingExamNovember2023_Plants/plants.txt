@@ -1,0 +1,14 @@
+HERB: White mustard; Sinapis alba; (20, 70)
+FLOWER DETAILS: yellow; small; 4 petals
+EDIBILITY: Yes; strong, pungent, somewhat bitter and slightly sweet
+HERB: Basil; Ocimum basilicum; (30, 150)
+FLOWER DETAILS: white; small; 5 petals
+EDIBILITY: Yes; savory and sweet with mint and pepper notes
+SHRUB: Sweetbriar Rose; Rosa rubiginosa; (200, 300)
+FLOWER DETAILS: pink; medium; 5 petals
+TREE: Pine; Pinus; (300, 8000)
+TREE: Oshima cherry; Prunus speciosa; (400, 1200)
+FLOWER DETAILS: white; medium; 5 petals
+HERB: Bracken fern; Pteridium aquilinum; (30, 100)
+EDIBILITY: No; a mixture of asparagus, almonds and kale
+SHRUB: King sago; Cycas revoluta; (50, 100)
