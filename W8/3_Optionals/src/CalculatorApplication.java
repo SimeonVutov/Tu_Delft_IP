@@ -10,10 +10,8 @@ public class CalculatorApplication {
      * @return An optional of the quotient or an empty optional if the divisor is zero
      */
     public static Optional<Double> safeDivide(double dividend, double divisor) {
-        if(divisor != 0.0) {
-            return Optional.of(dividend / divisor);
-        }
-        return Optional.empty();
+        if (divisor == 0.0) return Optional.empty();
+        return Optional.of(dividend / divisor);
     }
 
 }

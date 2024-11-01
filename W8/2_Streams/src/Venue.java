@@ -1,4 +1,3 @@
-import java.util.List;
 import java.util.Objects;
 
 public class Venue {
@@ -6,7 +5,6 @@ public class Venue {
     private String name;
     private String location;
     private int stars;
-    private List<String> menuItems;
 
     /**
      * Creates a venue.
@@ -46,10 +44,6 @@ public class Venue {
      */
     public int getStars() {
         return stars;
-    }
-
-    public List<String> getMenu() {
-        return menuItems;
     }
 
     /**
