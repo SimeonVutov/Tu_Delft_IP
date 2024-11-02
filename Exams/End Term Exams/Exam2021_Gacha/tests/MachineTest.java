@@ -25,7 +25,7 @@ class MachineTest {
     );
     private EmptyBall emptyBall1 = new EmptyBall(
             "White",
-            "This ball contains a normal prize from the animal range."
+            "Oh no! This ball is completely empty. Better luck on the next one!"
     );
     private ExtraBallBall extraBallBall = new ExtraBallBall(
             "White",
@@ -53,7 +53,7 @@ class MachineTest {
                 new BallCollection(List.of(extraBallBall))
         ));
 
-        //assertEquals(machine1, machine);
+        assertEquals(machine1, machine);
     }
 
     @Test
