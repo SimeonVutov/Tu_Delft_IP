@@ -1,0 +1,31 @@
+NORMAL PRIZE BALL [25]
+White
+This ball contains a normal prize from the animal range.
+{Monkey, Rhino, Capibara, Ring-tailed Lemur, Otter}
+NORMAL PRIZE BALL [25]
+Pink
+This ball contains a normal prize from the sea life range.
+{Dolphin, Octopus, Oyster, Orca}
+RARE PRIZE BALL [10]
+Blue
+This ball contains a rare prize from the animal range.
+{Chimpanzee, Python, Panda, Albatross}
+EPIC PRIZE BALL [5]
+Purple
+This ball contains some pretty epic loot from the shark and duck series.
+{Hammerhead Shark, Wild Duck, Rubber Duck, Great White Shark}
+LEGENDARY PRIZE BALL [1]
+Orange
+This ball contains an ultra fabulous animal figurine!
+{Max the Marmot}
+EMPTY BALL [10]
+Red
+Oh no! This ball is completely empty. Better luck on the next one!
+EXTRA BALLS BALL [5]
+Light Green
+This ball is special, you get to pull a few more balls!
+2
+EXTRA BALLS BALL [1]
+Bright Green
+This ball is special, you get to pull a few more balls!
+5
