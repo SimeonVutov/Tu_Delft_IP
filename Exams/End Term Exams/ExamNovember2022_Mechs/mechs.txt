@@ -1,0 +1,26 @@
+4
+MECH - Cloudwing - Bravo - 13568
+3ATK - 1DEF - 15HP - 4SPD
+strength: wind - weakness: poison
+MECH - Howler - Delta - 29845
+2ATK - 2DEF - 24HP - 3SPD
+strength: fire
+MECH - Frosthorn - Omega - 67458
+3ATK - 2DEF - 58HP - 1SPD
+strength: ice - weakness: fire - weakness: acid
+MECH - Acid Crawler - Bravo - 43564
+5ATK - 4DEF - 36HP - 5SPD
+strength: acid - weakness: poison
+4
+EQUIPMENT - Rusted Spear - Offensive - 13568
+1ATK
+
+EQUIPMENT - Leather Armor - Defensive - 43564
+1DEF
+weakness: wind
+EQUIPMENT - Assassins Blade - Offensive - 67458
+3ATK
+strength: poison
+EQUIPMENT - Power Armor - Defensive - 29845
+3DEF
+strength: fire - strength: electric
